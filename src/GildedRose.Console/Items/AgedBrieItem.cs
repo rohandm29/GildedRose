@@ -1,12 +1,12 @@
-namespace GildedRose.Console
+namespace GildedRose.Console.Items
 {
-    public class DexterityVestItem : Item
+    public class AgedBrieItem : Item
     {
         public override void UpdateQuality()
         {
             SellIn--;
 
-            Quality--;
+            Quality ++;
         }
     }
 }

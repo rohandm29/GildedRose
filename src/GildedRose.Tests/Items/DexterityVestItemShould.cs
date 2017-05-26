@@ -1,14 +1,16 @@
-﻿using Xunit;
+﻿using GildedRose.Console;
+using GildedRose.Console.Items;
+using Xunit;
 
-namespace GildedRose.Tests
+namespace GildedRose.Tests.Items
 {
-    public class DexterityVestShould
+    public class DexterityVestItemShould
     {
         [Fact]
         public void Reduce_The_Sell_In_When_Updating_Quality()
         {
             // Arrange
-            var dexterityVest = new DexterityVest()
+            var dexterityVest = new DexterityVestItem()
             {
                 SellIn = 10,
                 Quality = 4
@@ -25,7 +27,7 @@ namespace GildedRose.Tests
         public void Reduce_The_Update_In_When_Updating_Quality()
         {
             // Arrange
-            var dexterityVest = new DexterityVest()
+            var dexterityVest = new DexterityVestItem()
             {
                 SellIn = 10,
                 Quality = 4
